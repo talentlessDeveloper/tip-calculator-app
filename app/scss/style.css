@@ -20,15 +20,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
   margin: 0;
-  padding-top: 2rem;
 }
 
-@media (min-width: 40em) {
+@media (max-width: 63.9375em) {
   body {
     padding: 2rem;
   }
@@ -48,6 +50,12 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
+@media (min-width: 40em) {
+  h4 {
+    font-size: 1rem;
+  }
+}
+
 input {
   display: block;
   background-color: #f4fafa;
@@ -60,6 +68,13 @@ input {
   padding: 0.3rem 0.75rem;
   border: none;
   border-radius: 0.35rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */

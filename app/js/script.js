@@ -102,9 +102,9 @@ function controlReset() {
 controlReset();
 
 reset.addEventListener("click", () => {
-  inputBill.value = "150";
+  inputBill.value = "0";
   inputCustom.value = "";
-  inputPerson.value = "5";
+  inputPerson.value = "";
 
   tipPerPersonEl.innerHTML = "$0.00";
 
@@ -114,9 +114,9 @@ reset.addEventListener("click", () => {
 });
 
 window.addEventListener("load", (event) => {
-  inputBill.value = "150";
+  inputBill.value = "0";
   inputCustom.value = "";
-  inputPerson.value = "5";
+  inputPerson.value = "";
 
   tipPerPersonEl.innerHTML = "$0.00";
 

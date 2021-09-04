@@ -13,12 +13,12 @@ body {
   background-color: $lightGrayishCyan;
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  padding-top: 2rem;
-  @include breakpoint-desktop(medium) {
+
+  @include breakpoint-mobile(medium) {
     padding: 2rem;
   }
 }
@@ -35,6 +35,10 @@ h4 {
   font-weight: 700;
   font-size: 0.75rem;
   margin-bottom: 0.5rem;
+
+  @include breakpoint-desktop(medium) {
+    font-size: 1rem;
+  }
 }
 input {
   display: block;
@@ -48,6 +52,13 @@ input {
   padding: 0.3rem 0.75rem;
   border: none;
   border-radius: 0.35rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
