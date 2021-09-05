@@ -19,7 +19,7 @@ body {
   margin: 0;
 
   @include breakpoint-mobile(medium) {
-    padding: 2rem;
+    padding: 2rem 0;
   }
 }
 
