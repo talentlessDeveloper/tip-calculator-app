@@ -17,9 +17,10 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  padding-top: 2rem;
 
-  @include breakpoint-mobile(medium) {
-    padding: 2rem 0;
+  @include breakpoint-desktop(medium) {
+    padding: 2rem;
   }
 }
 

@@ -28,9 +28,10 @@ body {
           align-items: center;
   min-height: 100vh;
   margin: 0;
+  padding-top: 2rem;
 }
 
-@media (max-width: 63.9375em) {
+@media (min-width: 40em) {
   body {
     padding: 2rem;
   }
